@@ -99,6 +99,11 @@ div.content{
   border-radius: 50%;
   width: 220pt;
   border: 8pt solid rgba(255, 255, 255, 0.5);
+  filter: saturate(50%);
+}
+
+.my-photo:hover{
+  filter: saturate(110%);
 }
 
 
@@ -109,4 +114,8 @@ h2{
   padding: 6pt 6pt;
   margin: 10pt 0;
   background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(0,212,255,0.6615021008403361) 49%, rgba(0,0,0,0) 100%);
+}
+h2:hover{
+  filter: saturate(50%);
+  transition: filter 1s linear 0;
 }
