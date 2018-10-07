@@ -1,0 +1,121 @@
+*{
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 14pt;
+  padding: 0;
+  margin: 0;
+}
+
+ul, ol{
+  list-style-position: inside;
+}
+
+div.navigation{
+  display: block;
+  position: fixed;
+  top:0;
+  left:0;
+  right: 0;
+  width: 100%;
+  max-width: 1024px;
+  margin: 0 auto;
+  padding: 0 auto;
+  box-shadow: 0 2pt 8pt #888;
+  background: rgb(2,0,36);
+  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+}
+
+div.navigation ul{
+  list-style-type: none;
+  margin: 0 auto;
+  max-width: 1024px;
+}
+
+.navigation ul li{
+  display: inline-block;
+  height: 24pt;
+  /* background: red; */
+  padding: 8pt;
+}
+.navigation ul li:hover{
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.navigation ul li a{
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #f0f0f0;
+}
+.navigation ul li a:hover{
+  font-weight: bold;
+  color: #fff;
+}
+
+
+
+div.content{
+  max-width: 1024px;
+  margin: 48pt auto 24pt;
+  display: grid;
+  grid-gap: 14pt;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.content div{
+  background-color: #EEE;
+  /* border: 1px solid black; */
+  border-radius: 18pt 0;
+  padding: 18pt;
+}
+
+.content>div{
+    box-shadow: 0 2pt 8pt #888;
+}
+
+.personal-info{
+  grid-column-start: 1;
+  grid-column-end: 3;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+}
+
+.personal-info h1{
+  text-transform: uppercase;
+  font-size: 24pt;
+}
+
+.personal-info ul{
+  list-style-type: none;
+}
+
+
+.photo-wrapper{
+  align-items: center;
+  align-content: center;
+}
+
+.my-photo{
+  float: right;
+  border-radius: 50%;
+  width: 220pt;
+  border: 8pt solid rgba(255, 255, 255, 0.5);
+  filter: saturate(50%);
+}
+
+.my-photo:hover{
+  filter: saturate(110%);
+}
+
+
+
+h2{
+  color: #EEE;
+  text-transform: uppercase;
+  padding: 6pt 6pt;
+  margin: 10pt 0;
+  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(0,212,255,0.6615021008403361) 49%, rgba(0,0,0,0) 100%);
+}
+h2:hover{
+  filter: saturate(50%);
+  transition: filter 1s linear 0;
+}
