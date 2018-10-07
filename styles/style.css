@@ -13,11 +13,14 @@ div.navigation{
   display: block;
   position: fixed;
   top:0;
+  left:0;
+  right: 0;
   width: 100%;
+  max-width: 1024px;
   margin: 0 auto;
   padding: 0 auto;
   background: rgb(2,0,36);
-  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(0,212,255,0.6615021008403361) 49%, rgba(0,0,0,0) 100%);
+  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
 }
 
 div.navigation ul{
